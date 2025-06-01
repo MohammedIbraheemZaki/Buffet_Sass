@@ -99,8 +99,8 @@ export default function ProfileClient() {
   return (
     <div className="max-w-2xl mx-auto mt-40 h-full">
       <div className="bg-white p-8 my-auto rounded-lg shadow-md ">
-        <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-bold">{t('profile.yourProfile')}</h1>
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+          <h1 className="mb-3 text-2xl font-bold">{t('profile.yourProfile')}</h1>
           <div className="flex gap-2">
             <Link href={`/admin`}>
               <Button variant="outline" className='cursor-pointer'>
@@ -121,8 +121,6 @@ export default function ProfileClient() {
             </Button>
           </div>
         </div>
-        
-        
         
         {isEditing ? (
           <form onSubmit={handleSubmit}>

@@ -21,7 +21,7 @@ export default function ForgotPassword() {
   }
 
   return (
-    <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md mt-10">
+    <div className="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md mt-40">
       <h1 className="text-2xl font-bold mb-6 text-center">{t('auth.forgotPassword')}</h1>
       {isSubmitted ? (
         <div className="text-center">

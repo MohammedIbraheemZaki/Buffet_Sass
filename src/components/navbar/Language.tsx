@@ -6,6 +6,7 @@ import Menu from "../menu/Menu";
 import { setCookie } from "cookies-next/client";
 import { useRouter } from "next/navigation";
 import CheckBox from "../checkBox/CheckBox";
+import { Globe } from 'lucide-react';
 interface Props {
   lang: string;
 }
@@ -39,13 +40,15 @@ const Language = ({ lang }: Props) => {
     setOpen(false)
   };
   return (
-    <div className="hidden md:block relative">
+    <div className="relative">
       <button
         ref={userButtonRef}
         className="flex-c w-10 h-10 rounded-full bg-[#ABABAB21]"
         onClick={() => setOpen(!open)}
       >
-        <Image src={language} alt="notification-icon" loading="lazy" />
+        <Globe />
+        {/* <Image src={language} alt="notification-icon" loading="lazy" /> */}
+        
       </button>
       {open && (
         <Menu ref={userMenuRef} style="w-[311px]">
