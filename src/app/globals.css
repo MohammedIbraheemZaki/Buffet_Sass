@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  --title-color: #333333;
+  --desc-color: #666666;
+  --main-color: #101828;
+  --red-color: #f55157;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 767px) {
+  .main_main {
+    min-height: calc(100vh - 231px);
+  }
+}
+/* container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+/* container */
+/* colors */
+.text-gray {
+  color: #a5a5a5;
+}
+.title-color {
+  color: var(--title-color);
+}
+.text-main {
+  color: var(--main-color);
+}
+.desc-color {
+  color: var(--desc-color);
+}
+.text-red {
+  color: var(--red-color);
+}
+.bg-main {
+  background-color: var(--main-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.border-color {
+  border-color: #eeeeee;
+}
+.border-main-color {
+  border-color: var(--main-color);
+}
+.bx-shadow{
+  box-shadow: 0 0 20px #0000001a;
+}
+/* colors */
+/* Ruols */
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+/* Ruols */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/* hide scroll bar */
+.h-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.h-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+input,
+textarea {
+  outline: none;
+  font-size: 14px;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+}
+/* otp */
+.verify-otp input {
+  height: 56px;
+  background-color: #f4f4f4;
+  color: var(--main-color);
+  border-radius: 4px;
+}
+.verify-otp input:focus {
+  border: 1px solid var(--main-color);
+}
+.disable {
+  color: dimgrey;
+}
+/* otp */
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 3px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--desc-color);
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--title-color); /* Tailwind blue-500 */
+  border-radius: 6px;
+}
