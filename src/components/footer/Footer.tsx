@@ -1,9 +1,4 @@
-import React from "react";
-import About from "./About";
 import { useTranslations } from "next-intl";
-import Links from "./Links";
-import ContactUs from "./ContactUs";
-import FollowUs from "./FollowUs";
 import Link from "next/link";
 import Image from "next/image";
 import { logo } from "@/assets";
